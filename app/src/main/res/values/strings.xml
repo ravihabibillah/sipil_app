@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">SipilApp</string>
+    <string name="project">Project</string>
+    <string name="location">Location</string>
+    <string name="hole_id">Hole ID</string>
+    <string name="engineer">Engineer</string>
+    <string name="easting">Easting</string>
+    <string name="northing">Northing</string>
+    <string name="elevation">Elevation</string>
+    <string name="date">Date</string>
+    <string name="calculate">Hitung</string>
+    <string name="change_data">Ubah Data</string>
+    <string name="dummy_project">Tol Terbanggi Besar</string>
+    <string name="dummy_location">100+200</string>
+    <string name="dummy_hole_id">S-60</string>
+    <string name="dummy_engineer">Seseorang</string>
+    <string name="dummy_easting">9555350.87</string>
+    <string name="dummy_northing">516527.151</string>
+    <string name="dummy_elevation">N/A</string>
+    <string name="dummy_date">5-Aug-17</string>
+    <string name="depth">Depth</string>
+    <string name="cone_resistance">Cone Penetration</string>
+    <string name="total_resistance">Total Penetration</string>
+    <string name="in_meter">\n(m)</string>
+    <string name="in_kilos_per_centi">\n(kg/cm²)</string>
+    <string name="in_percent">\n(%)</string>
+    <string name="local_friction">Local Friction</string>
+    <string name="total_cumulative_friction">Total Cumulative Friction</string>
+    <string name="friction_ratio">Friction Ratio</string>
+    <string name="soil_type">Soil\nType</string>
+    <string name="go_to_graph">Lihat Grafik</string>
+</resources>
