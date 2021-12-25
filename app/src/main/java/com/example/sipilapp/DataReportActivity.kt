@@ -14,6 +14,7 @@ import com.example.sipilapp.viewmodel.MainViewModel
 import android.view.Gravity
 import android.view.MenuItem
 import android.view.View
+import android.widget.Toast
 import com.example.sipilapp.data.DataCalc
 import java.io.Serializable
 
@@ -44,6 +45,14 @@ class DataReportActivity : AppCompatActivity() {
             showTable(it)
         })
 
+        mainViewModel.toastText.observe(this, {
+            it.getContentIfNotHandled()?.let { toastText ->
+                Toast.makeText(this, toastText, Toast.LENGTH_SHORT).show()
+            }
+        })
+
+        clickableButtonToGraph(false);
+
         showExistingPreference()
 
         binding.btnToGraph.setOnClickListener {
@@ -52,7 +61,11 @@ class DataReportActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+    }
 
+    private fun clickableButtonToGraph(click: Boolean){
+        binding.btnToGraph.isEnabled = click
+        binding.btnToGraph.isClickable = click
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -68,7 +81,7 @@ class DataReportActivity : AppCompatActivity() {
     private fun showTable(listResistance: List<Sheet1Item>) {
         val tableMain = binding.tableMain
 
-        showLoading(false)
+//        showLoading(false)
 
         val rowTitle = TableRow(this)
 //        val tvparams = TableRow.LayoutParams(
@@ -130,7 +143,7 @@ class DataReportActivity : AppCompatActivity() {
         )
 
         rowTitle.setBackgroundResource(R.drawable.border)
-        showLoading(true)
+//        showLoading(true)
         tableMain.addView(rowTitle)
         addDataToTable(listResistance, tableMain)
 
@@ -138,14 +151,14 @@ class DataReportActivity : AppCompatActivity() {
 
 
     private fun addDataToTable(listResistance: List<Sheet1Item>, tableMain: TableLayout) {
-        showLoading(true)
+//        showLoading(true)
         var depth = 0.00
 
         var index = 0
         val tempList = mutableListOf<DataCalc>()
 
         for (data in listResistance) {
-            showLoading(true)
+//            showLoading(true)
             val dataCalc = DataCalc()
             val convertDepth = (String.format("%.2f", depth)).toFloat()
             val tbrow = TableRow(this)
@@ -214,24 +227,27 @@ class DataReportActivity : AppCompatActivity() {
         }
 //        Log.d(TAG, "addDataToTable: $tempList")
         listDataCalc = tempList
-        showLoading(false)
+//        showLoading(false)
+
+        clickableButtonToGraph(true);
+
     }
 
     private fun checkSoilType(frictionRatio: Float): String {
         var soilType = "-"
-        if (frictionRatio > 0.00) {
+        if (frictionRatio > 0.0) {
             when {
-                frictionRatio < 0.0020 -> {
+                frictionRatio < 0.5 -> {
+                    soilType = "Rock, shells & loose gravel"
+                }
+                frictionRatio < 2 -> {
+                    soilType = "Sand / gravel"
+                }
+                frictionRatio < 5 -> {
+                    soilType = "Clay-sand mixture & silt"
+                }
+                frictionRatio > 5 -> {
                     soilType = "Clay"
-                }
-                frictionRatio < 0.0074 -> {
-                    soilType = "Silt"
-                }
-                frictionRatio < 4.7500 -> {
-                    soilType = "Sand"
-                }
-                frictionRatio > 4.7500 -> {
-                    soilType = "Gravel"
                 }
             }
         }
@@ -298,9 +314,9 @@ class DataReportActivity : AppCompatActivity() {
         }
     }
 
-    private fun showLoading(isLoading: Boolean) {
-        binding.progressBar.visibility = if (isLoading) View.VISIBLE else View.GONE
-    }
+//    private fun showLoading(isLoading: Boolean) {
+//        binding.progressBar.visibility = if (isLoading) View.VISIBLE else View.GONE
+//    }
 
 
     companion object {

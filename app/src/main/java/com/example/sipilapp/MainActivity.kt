@@ -133,7 +133,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
                 // intent ke halaman tampilan data beserta tabel
 
-                Toast.makeText(this, "Data Sedang Diproses", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Data Sedang Diproses..\nMohon tunggu sebentar", Toast.LENGTH_LONG).show()
                 val resultIntent = Intent(this@MainActivity, DataReportActivity::class.java)
                 resultIntent.putExtra(EXTRA_RESULT, dataReport)
 //                setResult(RESULT_CODE, resultIntent)
@@ -158,8 +158,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         dataReport.location = location
         dataReport.holeId = holeId
         dataReport.engineer = engineer
-        dataReport.easting = easting.toDouble()
-        dataReport.northing = northing.toDouble()
+        dataReport.easting = easting.toFloat()
+        dataReport.northing = northing.toFloat()
         dataReport.elevation = elevation
         dataReport.date = date
 
