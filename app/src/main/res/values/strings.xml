@@ -29,4 +29,8 @@
     <string name="friction_ratio">Friction Ratio</string>
     <string name="soil_type">Soil\nType</string>
     <string name="go_to_graph">Lihat Grafik</string>
+    <string name="chart_of_tcf">Grafik dari Total Cumulative Friction</string>
+    <string name="chart_of_fr">Grafik dari Friction Ratio</string>
+    <string name="tcf">TCF</string>
+    <string name="fr">FR</string>
 </resources>
