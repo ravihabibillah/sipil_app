@@ -26,8 +26,8 @@ internal class ReportPreference(context: Context) {
         model.location = preferences.getString(LOCATION,"")
         model.holeId = preferences.getString(HOLE_ID,"")
         model.engineer = preferences.getString(ENGINEER,"")
-        model.easting = preferences.getFloat(EASTING, 0.0F).toDouble()
-        model.northing = preferences.getFloat(NORTHING, 0.0F).toDouble()
+        model.easting = preferences.getFloat(EASTING, 0.0F)
+        model.northing = preferences.getFloat(NORTHING, 0.0F)
         model.elevation = preferences.getString(ELEVATION,"")
         model.date = preferences.getString(DATE,"")
 

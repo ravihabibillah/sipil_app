@@ -9,8 +9,8 @@ data class DataReport(
     var location: String? = "",
     var holeId: String? = "",
     var engineer: String? = "",
-    var easting: Double = 0.0,
-    var northing: Double = 0.0,
+    var easting: Float = 0.0F,
+    var northing: Float = 0.0F,
     var elevation: String? = "",
     var date: String? = ""
 ): Parcelable
