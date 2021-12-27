@@ -13,7 +13,6 @@ import com.example.sipilapp.preferences.ReportPreference
 import com.example.sipilapp.viewmodel.MainViewModel
 import android.view.Gravity
 import android.view.MenuItem
-import android.view.View
 import android.widget.Toast
 import com.example.sipilapp.data.DataCalc
 import java.io.Serializable
@@ -51,7 +50,7 @@ class DataReportActivity : AppCompatActivity() {
             }
         })
 
-        clickableButtonToGraph(false);
+        clickableButtonToGraph(false)
 
         showExistingPreference()
 
@@ -229,7 +228,7 @@ class DataReportActivity : AppCompatActivity() {
         listDataCalc = tempList
 //        showLoading(false)
 
-        clickableButtonToGraph(true);
+        clickableButtonToGraph(true)
 
     }
 

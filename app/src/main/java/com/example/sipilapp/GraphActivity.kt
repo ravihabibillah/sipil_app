@@ -1,9 +1,7 @@
 package com.example.sipilapp
 
-import android.content.ContentValues.TAG
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.MenuItem
 import com.example.sipilapp.data.DataCalc
 import com.github.mikephil.charting.animation.Easing
@@ -53,7 +51,7 @@ class GraphActivity : AppCompatActivity() {
             entries1.add(Entry(x, y))
         }
         val lineDataSet1 = LineDataSet(entries1, "TCF dan Depth")
-        lineChart1.data = LineData(lineDataSet1);
+        lineChart1.data = LineData(lineDataSet1)
 
         // Set LineChart 1
         initLineChart(lineDataSet1, lineChart1)
@@ -66,7 +64,7 @@ class GraphActivity : AppCompatActivity() {
             entries2.add(Entry(x, y))
         }
         val lineDataSet2 = LineDataSet(entries2, "FR dan Depth")
-        lineChart2.data = LineData(lineDataSet2);
+        lineChart2.data = LineData(lineDataSet2)
         // Set LineChart 2
         initLineChart(lineDataSet2, lineChart2)
 
