@@ -27,7 +27,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/depth"
+            android:text="@string/depth_m"
             android:textSize="11sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -36,7 +36,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tcf"
+            android:text="@string/tcf_kg_cm"
             android:textSize="11sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/first_graph"
@@ -66,8 +66,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:text="@string/fr"
+            android:layout_marginTop="-5dp"
+            android:text="@string/fr_percent"
             android:textSize="11sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@id/second_graph"
@@ -77,10 +77,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
-            android:text="@string/depth"
+            android:text="@string/depth_m"
             android:textSize="11sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@id/second_graph"
+            app:layout_constraintTop_toBottomOf="@id/second_graph"
             app:layout_constraintStart_toStartOf="@id/second_graph" />
 
         <com.github.mikephil.charting.charts.LineChart

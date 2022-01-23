@@ -6,15 +6,15 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.sipilapp.DataConeResponse
 import com.example.sipilapp.Event
-import com.example.sipilapp.Sheet1Item
+import com.example.sipilapp.RecordsItem
 import com.example.sipilapp.api.ApiConfig
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
 class MainViewModel : ViewModel() {
-    private val _listResistance = MutableLiveData<List<Sheet1Item>>()
-    val listResistance: LiveData<List<Sheet1Item>> = _listResistance
+    private val _listResistance = MutableLiveData<List<RecordsItem>>()
+    val listResistance: LiveData<List<RecordsItem>> = _listResistance
 
     private val _toastText = MutableLiveData<Event<String>>()
     val toastText: LiveData<Event<String>> = _toastText

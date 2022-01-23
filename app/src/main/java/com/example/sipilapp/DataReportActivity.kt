@@ -77,7 +77,7 @@ class DataReportActivity : AppCompatActivity() {
         }
     }
 
-    private fun showTable(listResistance: List<Sheet1Item>) {
+    private fun showTable(listResistance: List<RecordsItem>) {
         val tableMain = binding.tableMain
 
 //        showLoading(false)
@@ -149,7 +149,7 @@ class DataReportActivity : AppCompatActivity() {
     }
 
 
-    private fun addDataToTable(listResistance: List<Sheet1Item>, tableMain: TableLayout) {
+    private fun addDataToTable(listResistance: List<RecordsItem>, tableMain: TableLayout) {
 //        showLoading(true)
         var depth = 0.00
 

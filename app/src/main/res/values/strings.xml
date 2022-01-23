@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">Sondir Test</string>
-    <string name="project">Project</string>
-    <string name="location">Location</string>
-    <string name="hole_id">Hole ID</string>
-    <string name="engineer">Engineer</string>
-    <string name="easting">Easting</string>
-    <string name="northing">Northing</string>
-    <string name="elevation">Elevation</string>
-    <string name="date">Date</string>
+    <string name="project">Project / Proyek</string>
+    <string name="location">Location / Lokasi</string>
+    <string name="hole_id">Hole ID / Identitas Lubang</string>
+    <string name="engineer">Engineer / Penguji</string>
+    <string name="easting">Coordinate / Koordinat</string>
+    <string name="northing">Coordinate / Koordinat</string>
+    <string name="elevation">Elevation / Ketinggian</string>
+    <string name="date">Date / Tanggal</string>
     <string name="calculate">Hitung</string>
     <string name="change_data">Ubah Data</string>
     <string name="dummy_project">Tol Terbanggi Besar</string>
@@ -35,4 +35,7 @@
     <string name="fr">FR</string>
     <string name="owner_name">Presented by Mayang Andan Sari</string>
     <string name="avatar">Avatar</string>
+    <string name="depth_m">Depth (m)</string>
+    <string name="tcf_kg_cm">TCF (Kg/cm²)</string>
+    <string name="fr_percent">FR (%)</string>
 </resources>

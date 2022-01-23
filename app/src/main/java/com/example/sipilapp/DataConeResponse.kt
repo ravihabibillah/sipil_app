@@ -8,12 +8,12 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class DataConeResponse(
 
-	@field:SerializedName("Sheet1")
-	val sheet1: List<Sheet1Item>
+	@field:SerializedName("records")
+	val sheet1: List<RecordsItem>
 ) : Parcelable
 
 @Parcelize
-data class Sheet1Item(
+data class RecordsItem(
 
 	@field:SerializedName("Cone_Resistance")
 	val coneResistance: Int,
