@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Ravi/Android/SipilApp/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
+        <entry key="..\:/Ravi/Project List/Project Sipil/SipilApp/app/src/main/res/drawable/border.xml" value="0.22135416666666666" />
+        <entry key="..\:/Ravi/Project List/Project Sipil/SipilApp/app/src/main/res/layout/activity_data_report.xml" value="0.25" />
+        <entry key="..\:/Ravi/Project List/Project Sipil/SipilApp/app/src/main/res/layout/activity_graph.xml" value="0.15" />
+        <entry key="..\:/Ravi/Project List/Project Sipil/SipilApp/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Ravi/Project List/Project Sipil/SipilApp/app/src/main/res/layout/border.xml" value="0.20520833333333333" />
+        <entry key="..\:/Ravi/Project/Sipil App/sipil_app-develop/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
+        <entry key="..\:/Ravi/Project/Sipil App/sipil_app/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Ravi/Project/Sipil App/sipil_app/app/src/main/res/drawable/border.xml" value="0.17407407407407408" />
+        <entry key="..\:/Ravi/Project/Sipil App/sipil_app/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Ravi/Project/Sipil App/sipil_app/app/src/main/res/font/yanone_kaffeesatz.xml" value="0.10648148148148148" />
+        <entry key="..\:/Ravi/Project/Sipil App/sipil_app/app/src/main/res/layout-land/activity_graph.xml" value="0.2984749455337691" />
+        <entry key="..\:/Ravi/Project/Sipil App/sipil_app/app/src/main/res/layout/activity_data_report.xml" value="0.2" />
+        <entry key="..\:/Ravi/Project/Sipil App/sipil_app/app/src/main/res/layout/activity_graph.xml" value="0.25" />
+        <entry key="..\:/Ravi/Project/Sipil App/sipil_app/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Ravi/Project/Sipil App/sipil_app/app/src/main/res/layout/activity_splash_screen.xml" value="0.22" />
+        <entry key="..\:/Ravi/Project/Sipil App/sipil_app/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Ravi/Project/Sipil App/sipil_app/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
