@@ -141,6 +141,13 @@ class DataReportActivity : AppCompatActivity() {
             getString(R.string.soil_type)
         )
 
+        val textSoilTypeHandbor = TextView(this)
+        setTextViewStyleInTable(
+            rowTitle,
+            textSoilTypeHandbor,
+            getString(R.string.soil_type) + "(Handbor)"
+        )
+
         rowTitle.setBackgroundResource(R.drawable.border)
 //        showLoading(true)
         tableMain.addView(rowTitle)
@@ -214,10 +221,15 @@ class DataReportActivity : AppCompatActivity() {
             setTextViewStyleInTable(tbrow, tvFrictionRatio, frictionRatio.toString())
             dataCalc.frictionRatio = frictionRatio
 
-
+            // Set Soil Type
             val tvSoilType = TextView(this)
             val soilType = checkSoilType(frictionRatio)
             setTextViewStyleInTable(tbrow, tvSoilType, soilType)
+
+            // Set Soil Type Handbor
+            val tvSoilTypeHandbor = TextView(this)
+            val soilTypeHandbor = data.soilTypeHandbor
+            setTextViewStyleInTable(tbrow, tvSoilTypeHandbor, soilTypeHandbor)
 
             tempList.add(dataCalc)
             tableMain.addView(tbrow)

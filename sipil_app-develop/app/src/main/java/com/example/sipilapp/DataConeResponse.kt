@@ -19,5 +19,8 @@ data class RecordsItem(
 	val coneResistance: Int,
 
 	@field:SerializedName("Total_Resistance")
-	val totalResistance: Int
+	val totalResistance: Int,
+
+	@field:SerializedName("Soil_Type")
+	val soilTypeHandbor: String
 ) : Parcelable
