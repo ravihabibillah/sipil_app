@@ -62,7 +62,7 @@ class DataReportActivity : AppCompatActivity() {
 
     }
 
-    private fun clickableButtonToGraph(click: Boolean){
+    private fun clickableButtonToGraph(click: Boolean) {
         binding.btnToGraph.isEnabled = click
         binding.btnToGraph.isClickable = click
     }
@@ -145,7 +145,7 @@ class DataReportActivity : AppCompatActivity() {
         setTextViewStyleInTable(
             rowTitle,
             textSoilTypeHandbor,
-            getString(R.string.soil_type) + "(Handbor)"
+            getString(R.string.soil_type_handbor)
         )
 
         rowTitle.setBackgroundResource(R.drawable.border)
@@ -313,12 +313,9 @@ class DataReportActivity : AppCompatActivity() {
                 if (dataReport.holeId.toString().isEmpty()) "Tidak Ada" else dataReport.holeId
             tvEngineer.text =
                 if (dataReport.engineer.toString().isEmpty()) "Tidak Ada" else dataReport.engineer
-            tvEasting.text = if (dataReport.easting.toString()
+            tvCoordinate.text = if (dataReport.coordinate.toString()
                     .isEmpty()
-            ) "Tidak Ada" else dataReport.easting.toString()
-            tvNorthing.text = if (dataReport.northing.toString()
-                    .isEmpty()
-            ) "Tidak Ada" else dataReport.northing.toString()
+            ) "Tidak Ada" else dataReport.coordinate
             tvElevation.text =
                 if (dataReport.elevation.toString().isEmpty()) "Tidak Ada" else dataReport.elevation
             tvDate.text = if (dataReport.date.toString().isEmpty()) "Tidak Ada" else dataReport.date

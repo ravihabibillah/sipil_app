@@ -77,26 +77,11 @@
             android:layout_marginBottom="16dp">
 
             <EditText
-                android:id="@+id/edt_easting"
+                android:id="@+id/edt_coordinate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/easting"
-                android:inputType="numberDecimal"
-                android:maxLines="1"
-                tools:ignore="Autofill" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp">
-
-            <EditText
-                android:id="@+id/edt_northing"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/northing"
-                android:inputType="numberDecimal"
+                android:inputType="text"
                 android:maxLines="1"
                 tools:ignore="Autofill" />
         </com.google.android.material.textfield.TextInputLayout>

@@ -96,47 +96,25 @@
             tools:text="@string/dummy_engineer" />
 
         <TextView
-            android:id="@+id/label_easting"
+            android:id="@+id/label_coordinate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/easting"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/label_location"
-            app:layout_constraintTop_toBottomOf="@+id/tv_project" />
+            app:layout_constraintStart_toStartOf="@+id/label_date"
+            app:layout_constraintTop_toBottomOf="@+id/tv_date" />
 
         <TextView
-            android:id="@+id/tv_easting"
+            android:id="@+id/tv_coordinate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="16dp"
             android:textSize="16sp"
             android:textStyle="bold"
-            app:layout_constraintLeft_toLeftOf="@id/label_easting"
-            app:layout_constraintTop_toBottomOf="@id/label_easting"
+            app:layout_constraintLeft_toLeftOf="@id/label_coordinate"
+            app:layout_constraintTop_toBottomOf="@id/label_coordinate"
             tools:text="@string/dummy_easting" />
-
-        <TextView
-            android:id="@+id/label_northing"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/northing"
-            app:layout_constraintStart_toStartOf="@+id/label_easting"
-            app:layout_constraintTop_toBottomOf="@id/tv_easting" />
-
-        <TextView
-            android:id="@+id/tv_northing"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="16dp"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintLeft_toLeftOf="@id/label_northing"
-            app:layout_constraintTop_toBottomOf="@id/label_northing"
-            tools:text="@string/dummy_northing" />
 
         <TextView
             android:id="@+id/label_elevation"
@@ -144,8 +122,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/elevation"
-            app:layout_constraintStart_toStartOf="@+id/tv_northing"
-            app:layout_constraintTop_toBottomOf="@id/tv_northing" />
+            app:layout_constraintStart_toStartOf="@+id/tv_coordinate"
+            app:layout_constraintTop_toBottomOf="@id/tv_coordinate" />
 
         <TextView
             android:id="@+id/tv_elevation"
@@ -163,17 +141,16 @@
             android:id="@+id/label_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
             android:text="@string/date"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_engineer" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/label_location"
+            app:layout_constraintTop_toTopOf="@+id/label_location" />
 
         <TextView
             android:id="@+id/tv_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="16dp"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="@id/label_date"
@@ -199,7 +176,7 @@
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_date">
+            app:layout_constraintTop_toBottomOf="@+id/tv_engineer">
 
             <TableLayout
                 android:id="@+id/table_main"

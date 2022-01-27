@@ -69,8 +69,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             edtLocation.setText(dataReport.location)
             edtHoleId.setText(dataReport.holeId)
             edtEngineer.setText(dataReport.engineer)
-            edtEasting.setText(dataReport.easting.toString())
-            edtNorthing.setText(dataReport.northing.toString())
+            edtCoordinate.setText(dataReport.coordinate)
             edtElevation.setText(dataReport.elevation)
             edtDate.setText(dataReport.date)
         }
@@ -90,8 +89,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 val location = binding.edtLocation.text.toString().trim()
                 val holeId = binding.edtHoleId.text.toString().trim()
                 val engineer = binding.edtEngineer.text.toString().trim()
-                val easting = binding.edtEasting.text.toString().trim()
-                val northing = binding.edtNorthing.text.toString().trim()
+                val coordinate = binding.edtCoordinate.text.toString().trim()
                 val elevation = binding.edtElevation.text.toString().trim()
                 val date = binding.edtDate.text.toString().trim()
 
@@ -112,12 +110,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     binding.edtEngineer.error = FIELD_REQUIRED
                     return
                 }
-                if (easting.isEmpty()) {
-                    binding.edtEasting.error = FIELD_REQUIRED
-                    return
-                }
-                if (northing.isEmpty()) {
-                    binding.edtNorthing.error = FIELD_REQUIRED
+                if (coordinate.isEmpty()) {
+                    binding.edtCoordinate.error = FIELD_REQUIRED
                     return
                 }
                 if (elevation.isEmpty()) {
@@ -129,7 +123,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     return
                 }
 
-                saveReport(project, location, holeId, engineer, easting, northing, elevation, date)
+                saveReport(project, location, holeId, engineer, coordinate, elevation, date)
 
                 // intent ke halaman tampilan data beserta tabel
 
@@ -147,8 +141,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         location: String,
         holeId: String,
         engineer: String,
-        easting: String,
-        northing: String,
+        coordinate: String,
         elevation: String,
         date: String
     ) {
@@ -158,8 +151,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         dataReport.location = location
         dataReport.holeId = holeId
         dataReport.engineer = engineer
-        dataReport.easting = easting.toFloat()
-        dataReport.northing = northing.toFloat()
+        dataReport.coordinate = coordinate
         dataReport.elevation = elevation
         dataReport.date = date
 

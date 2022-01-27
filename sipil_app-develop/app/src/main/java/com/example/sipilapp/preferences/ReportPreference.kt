@@ -13,8 +13,7 @@ internal class ReportPreference(context: Context) {
         editor.putString(LOCATION, value.location)
         editor.putString(HOLE_ID, value.holeId)
         editor.putString(ENGINEER, value.engineer)
-        editor.putFloat(EASTING, value.easting)
-        editor.putFloat(NORTHING, value.northing)
+        editor.putString(COORDINATE, value.coordinate)
         editor.putString(ELEVATION, value.elevation)
         editor.putString(DATE,value.date)
         editor.apply()
@@ -26,8 +25,7 @@ internal class ReportPreference(context: Context) {
         model.location = preferences.getString(LOCATION,"")
         model.holeId = preferences.getString(HOLE_ID,"")
         model.engineer = preferences.getString(ENGINEER,"")
-        model.easting = preferences.getFloat(EASTING, 0.0F)
-        model.northing = preferences.getFloat(NORTHING, 0.0F)
+        model.coordinate = preferences.getString(COORDINATE,"")
         model.elevation = preferences.getString(ELEVATION,"")
         model.date = preferences.getString(DATE,"")
 
@@ -41,8 +39,7 @@ internal class ReportPreference(context: Context) {
         private const val LOCATION = "location"
         private const val HOLE_ID = "hole_id"
         private const val ENGINEER = "engineer"
-        private const val EASTING = "easting"
-        private const val NORTHING = "northing"
+        private const val COORDINATE = "coordinate"
         private const val ELEVATION = "elevation"
         private const val DATE = "date"
     }
