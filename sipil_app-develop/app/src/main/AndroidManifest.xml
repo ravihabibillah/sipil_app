@@ -28,6 +28,7 @@
             android:name=".DataReportActivity"
             android:exported="false" />
         <activity
+            android:windowSoftInputMode="adjustNothing|stateHidden"
             android:name=".MainActivity"
             android:exported="false">
 

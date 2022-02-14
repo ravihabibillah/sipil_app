@@ -5,21 +5,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
+    android:background="@drawable/bg_2"
     tools:context=".GraphActivity">
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingBottom="20dp">
 
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/first_graph"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"
+            android:alpha="0.95"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title1" />
+
         <TextView
             android:id="@+id/title1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/chart_of_tcf"
-
             android:textSize="20sp"
             android:textStyle="bold"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -27,7 +40,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="@string/depth_m"
+            android:layout_marginStart="5dp"
             android:textSize="11sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -38,19 +53,24 @@
             android:layout_height="wrap_content"
             android:text="@string/tcf_kg_cm"
             android:textSize="11sp"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/first_graph"
             app:layout_constraintEnd_toEndOf="parent" />
 
+
         <com.github.mikephil.charting.charts.LineChart
-            android:id="@+id/first_graph"
+            android:id="@+id/second_graph"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:layout_marginTop="10dp"
+            android:layout_height="375dp"
+            android:layout_marginTop="30dp"
+            android:alpha="0.95"
+            android:background="@color/white"
+            android:rotation="90"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/title1" />
-
+            app:layout_constraintTop_toBottomOf="@+id/title2" />
         <TextView
             android:id="@+id/title2"
             android:layout_width="wrap_content"
@@ -59,6 +79,7 @@
             android:text="@string/chart_of_fr"
             android:textSize="20sp"
             android:textStyle="bold"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/first_graph" />
@@ -68,7 +89,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="-5dp"
             android:text="@string/fr_percent"
+            android:layout_marginEnd="10dp"
             android:textSize="11sp"
+            android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@id/second_graph"
             app:layout_constraintTop_toTopOf="@id/second_graph" />
@@ -79,19 +102,13 @@
             android:layout_marginStart="15dp"
             android:text="@string/depth_m"
             android:textSize="11sp"
+            android:layout_marginTop="-5dp"
+            android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintTop_toBottomOf="@id/second_graph"
             app:layout_constraintStart_toStartOf="@id/second_graph" />
 
-        <com.github.mikephil.charting.charts.LineChart
-            android:id="@+id/second_graph"
-            android:layout_width="match_parent"
-            android:layout_height="375dp"
-            android:layout_marginTop="30dp"
-            android:rotation="90"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/title2" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

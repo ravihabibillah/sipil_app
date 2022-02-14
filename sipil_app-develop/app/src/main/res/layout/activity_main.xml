@@ -1,145 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_1" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp">
-
-            <EditText
-                android:id="@+id/edt_project"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/project"
-                android:inputType="textPersonName"
-                android:maxLines="1"
-                tools:ignore="Autofill" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp">
-
-            <EditText
-                android:id="@+id/edt_location"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/location"
-                android:inputType="textPersonName"
-                android:maxLines="1"
-                tools:ignore="Autofill" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp">
-
-            <EditText
-                android:id="@+id/edt_hole_id"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/hole_id"
-                android:inputType="textPersonName"
-                android:maxLines="1"
-                tools:ignore="Autofill" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp">
-
-            <EditText
-                android:id="@+id/edt_engineer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/engineer"
-                android:inputType="textPersonName"
-                android:maxLines="1"
-                tools:ignore="Autofill" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp">
-
-            <EditText
-                android:id="@+id/edt_coordinate"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/easting"
-                android:inputType="text"
-                android:maxLines="1"
-                tools:ignore="Autofill" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp">
-
-            <EditText
-                android:id="@+id/edt_elevation"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/elevation"
-                android:inputType="textPersonName"
-                android:maxLines="1"
-                tools:ignore="Autofill" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp">
-
-            <EditText
-                android:id="@+id/edt_date"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/date"
-                android:inputType="date"
-                android:maxLines="1"
-                android:importantForAutofill="no" />
-        </com.google.android.material.textfield.TextInputLayout>
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:orientation="horizontal">
+            android:orientation="vertical"
+            android:padding="16dp">
 
-            <Button
-                android:id="@+id/btn_change"
-                android:layout_width="wrap_content"
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
-                android:layout_weight="1"
-                android:text="@string/change_data"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:layout_marginBottom="16dp"
+                android:textColorHint="@color/black"
+                app:hintTextColor="@color/black">
 
-            <Button
-                android:id="@+id/btn_calculate"
-                android:layout_width="wrap_content"
+                <EditText
+                    android:id="@+id/edt_project"
+                    style="@style/EditTextAppearance"
+                    android:hint="@string/project"
+                    android:inputType="textPersonName"
+                    tools:ignore="Autofill" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/calculate"
-                tools:ignore="ButtonStyle" />
+                android:layout_marginBottom="16dp"
+                android:textColorHint="@color/black"
+                app:hintTextColor="@color/black">
+
+                <EditText
+                    android:id="@+id/edt_location"
+                    style="@style/EditTextAppearance"
+                    android:hint="@string/location"
+                    android:inputType="textPersonName"
+                    tools:ignore="Autofill" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textColorHint="@color/black"
+                app:hintTextColor="@color/black">
+
+                <EditText
+                    android:id="@+id/edt_hole_id"
+                    style="@style/EditTextAppearance"
+                    android:hint="@string/hole_id"
+                    android:inputType="textPersonName"
+                    tools:ignore="Autofill" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textColorHint="@color/black"
+                app:hintTextColor="@color/black">
+
+                <EditText
+                    android:id="@+id/edt_engineer"
+                    style="@style/EditTextAppearance"
+                    android:hint="@string/engineer"
+                    android:inputType="textPersonName"
+                    tools:ignore="Autofill" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textColorHint="@color/black"
+                app:hintTextColor="@color/black">
+
+                <EditText
+                    android:id="@+id/edt_coordinate"
+                    style="@style/EditTextAppearance"
+                    android:hint="@string/easting"
+                    android:inputType="text"
+                    tools:ignore="Autofill" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textColorHint="@color/black"
+                app:hintTextColor="@color/black">
+
+                <EditText
+                    android:id="@+id/edt_elevation"
+                    style="@style/EditTextAppearance"
+                    android:hint="@string/elevation"
+                    android:inputType="text"
+                    tools:ignore="Autofill" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textColorHint="@color/black"
+                app:hintTextColor="@color/black">
+
+                <EditText
+                    android:id="@+id/edt_date"
+                    style="@style/EditTextAppearance"
+                    android:hint="@string/date"
+                    android:importantForAutofill="no"
+                    android:inputType="date" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="horizontal"
+                app:hintTextColor="@color/black">
+
+                <Button
+                    android:id="@+id/btn_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    style="@style/ButtonAppearance"
+                    android:layout_weight="1"
+                    android:text="@string/change_data" />
+
+                <Button
+                    android:id="@+id/btn_calculate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/ButtonAppearance"
+                    android:text="@string/calculate"
+                    tools:ignore="ButtonStyle" />
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
 
-</ScrollView>
+    </ScrollView>
+
+
+</RelativeLayout>
