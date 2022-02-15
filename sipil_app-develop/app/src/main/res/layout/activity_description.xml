@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_700"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".DescriptionActivity">
+
+
+
+    <TextView
+        android:id="@+id/label_app_name"
+        style="@style/DescriptionTextStyle"
+        android:layout_marginLeft="16dp"
+        android:text="Nama Aplikasi"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/description_app_name"
+        style="@style/DescriptionTextStyle"
+        android:layout_marginLeft="16dp"
+        android:text=": Sondir Test"
+        app:layout_constraintLeft_toRightOf="@id/label_app_name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/label_creator_name"
+        style="@style/DescriptionTextStyle"
+        android:text="Nama Kreator"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/label_app_name"
+        app:layout_constraintTop_toBottomOf="@id/label_app_name" />
+
+    <TextView
+        android:id="@+id/description_creator_name"
+        style="@style/DescriptionTextStyle"
+        android:text=": Mayang Andan Sari"
+        app:layout_constraintStart_toStartOf="@+id/description_app_name"
+        app:layout_constraintTop_toBottomOf="@id/description_app_name" />
+
+    <TextView
+        android:id="@+id/label_creator_nim"
+        style="@style/DescriptionTextStyle"
+        android:text="NIM"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/label_creator_name"
+        app:layout_constraintTop_toBottomOf="@id/label_creator_name" />
+
+    <TextView
+        android:id="@+id/description_creator_nim"
+        style="@style/DescriptionTextStyle"
+        android:text=": 17505241069"
+        app:layout_constraintStart_toStartOf="@id/description_creator_name"
+        app:layout_constraintTop_toBottomOf="@id/description_creator_name" />
+
+    <TextView
+        android:id="@+id/label_creator_prodi"
+        style="@style/DescriptionTextStyle"
+        android:text="Prodi"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/label_creator_nim"
+        app:layout_constraintTop_toBottomOf="@id/label_creator_nim" />
+
+    <TextView
+        android:id="@+id/description_creator_prodi"
+        style="@style/DescriptionTextStyle"
+        android:text=": Pendidikan Teknik Sipil \n\tdan Perencanaan"
+        android:maxLines="2"
+        app:layout_constraintStart_toStartOf="@id/description_creator_nim"
+        app:layout_constraintTop_toBottomOf="@id/description_creator_nim" />
+
+    <TextView
+        android:id="@+id/label_creator_email"
+        style="@style/DescriptionTextStyle"
+        android:text="\nEmail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/label_creator_prodi"
+        app:layout_constraintTop_toBottomOf="@id/label_creator_prodi" />
+
+    <TextView
+        android:id="@+id/description_creator_email"
+        style="@style/DescriptionTextStyle"
+        android:text=": mayangandansari@gmail.com"
+        app:layout_constraintStart_toStartOf="@id/description_creator_prodi"
+        app:layout_constraintTop_toBottomOf="@id/description_creator_prodi" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_creator_email">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_weight="1"
+            android:text="Petunjuk Pemakaian" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_weight="1"
+            android:text="Pengisian Data" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
