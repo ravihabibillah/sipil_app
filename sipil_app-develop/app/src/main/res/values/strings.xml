@@ -39,4 +39,16 @@
     <string name="depth_m">Depth (m)</string>
     <string name="tcf_kg_cm">TCF (Kg/cm²)</string>
     <string name="fr_percent">FR (%)</string>
+    <string name="nama_aplikasi">Nama Aplikasi</string>
+    <string name="sondir_test">: Sondir Test</string>
+    <string name="nama_kreator">Nama Kreator</string>
+    <string name="mayang_andan_sari">: Mayang Andan Sari</string>
+    <string name="nim">NIM</string>
+    <string name="creator_nim">: 17505241069</string>
+    <string name="prodi">Prodi</string>
+    <string name="pendidikan_teknik_sipil_n_tdan_perencanaan">: Pendidikan Teknik Sipil \n\tdan Perencanaan</string>
+    <string name="nemail">\nEmail</string>
+    <string name="mayangandansari_gmail_com">: mayangandansari@gmail.com</string>
+    <string name="petunjuk_pemakaian">Petunjuk Pemakaian</string>
+    <string name="pengisian_data">Pengisian Data</string>
 </resources>
