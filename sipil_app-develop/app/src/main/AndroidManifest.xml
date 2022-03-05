@@ -6,11 +6,25 @@
 
     <application
         android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:fullBackupOnly="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.SipilApp">
+        <activity
+            android:name=".GuideActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReferenceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
         <activity
             android:name=".DescriptionActivity"
             android:exported="false" />
@@ -33,7 +47,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="false"
-            android:windowSoftInputMode="adjustNothing|stateHidden"></activity>
+            android:windowSoftInputMode="adjustNothing|stateHidden" />
     </application>
 
 </manifest>

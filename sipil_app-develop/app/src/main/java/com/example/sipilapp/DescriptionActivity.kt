@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.example.sipilapp.databinding.ActivityDescriptionBinding
-import com.example.sipilapp.databinding.ActivityMainBinding
 
 class DescriptionActivity : AppCompatActivity(), View.OnClickListener {
 

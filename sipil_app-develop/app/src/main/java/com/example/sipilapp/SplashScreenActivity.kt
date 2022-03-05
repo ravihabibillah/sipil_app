@@ -1,5 +1,6 @@
 package com.example.sipilapp
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -13,7 +14,7 @@ class SplashScreenActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash_screen)
 
         Handler().postDelayed({
-            val intent = Intent(this, DescriptionActivity::class.java)
+            val intent = Intent(this, MenuActivity::class.java)
             startActivity(intent)
             finish()
         }, SPLASH_TIME_OUT.toLong())

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_4"
+    android:gravity="center"
+    tools:context=".MenuActivity">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="3">
+        <androidx.cardview.widget.CardView
+            style="@style/MenuCardStyle"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageButton
+                    style="@style/ImageButtonStyle"
+                    android:background="@drawable/logo_materi" />
+
+                <TextView
+                    style="@style/MenuTextStyle"
+                    android:text="Materi" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        
+
+
+        <androidx.cardview.widget.CardView
+            style="@style/MenuCardStyle"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/ib_referensi"
+                    style="@style/ImageButtonStyle"
+                    android:background="@drawable/logo_referensi" />
+
+
+                <TextView
+                    style="@style/MenuTextStyle"
+                    android:text="Referensi" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            style="@style/MenuCardStyle"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/ib_petunjuk"
+                    style="@style/ImageButtonStyle"
+                    android:background="@drawable/logo_petunjuk_penggunaan" />
+
+
+                <TextView
+                    style="@style/MenuTextStyle"
+                    android:text="Petunjuk\nPenggunaan" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            style="@style/MenuCardStyle"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/ib_profil"
+                    style="@style/ImageButtonStyle"
+                    android:background="@drawable/avatar" />
+
+
+                <TextView
+                    style="@style/MenuTextStyle"
+                    android:text="Profil" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/MenuCardStyle"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/ib_hitung"
+                    style="@style/ImageButtonStyle"
+                    android:background="@drawable/logo_perhitungan" />
+
+                <TextView
+                    style="@style/MenuTextStyle"
+                    android:text="Perhitungan" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+
+</LinearLayout>

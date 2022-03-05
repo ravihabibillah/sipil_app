@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_3"
+    android:gravity="center"
+    tools:context=".MenuActivity">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="2"
+        tools:ignore="UselessParent">
+
+        <androidx.cardview.widget.CardView
+            style="@style/MenuCardStyle"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageButton
+                    style="@style/ImageButtonStyle"
+                    android:background="@drawable/logo_materi"
+                    android:contentDescription="@string/icon" />
+
+                <TextView
+                    style="@style/MenuTextStyle"
+                    android:text="@string/materi" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/MenuCardStyle"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/ib_petunjuk"
+                    style="@style/ImageButtonStyle"
+                    android:background="@drawable/logo_petunjuk_penggunaan"
+                    android:contentDescription="@string/icon" />
+
+
+                <TextView
+                    style="@style/MenuTextStyle"
+                    android:text="@string/petunjuk_npenggunaan" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/MenuCardStyle"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/ib_referensi"
+                    style="@style/ImageButtonStyle"
+                    android:background="@drawable/logo_referensi"
+                    android:contentDescription="@string/icon"/>
+
+
+                <TextView
+                    style="@style/MenuTextStyle"
+                    android:text="@string/referensi" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/MenuCardStyle"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/ib_hitung"
+                    style="@style/ImageButtonStyle"
+                    android:background="@drawable/logo_perhitungan"
+                    android:contentDescription="@string/icon"/>
+
+                <TextView
+                    style="@style/MenuTextStyle"
+                    android:text="@string/perhitungan" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/MenuCardStyle"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/ib_profil"
+                    style="@style/ImageButtonStyle"
+                    android:background="@drawable/avatar"
+                    android:contentDescription="@string/icon"/>
+
+                <TextView
+                    style="@style/MenuTextStyle"
+                    android:text="@string/profil" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+
+</LinearLayout>
